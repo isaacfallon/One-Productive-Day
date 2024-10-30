@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.sx-react-calendar-wrapper {
+    /* width: 33%; */
+    /* max-width: 50vw; */
+    height: 800px;
+    max-height: 75vh;
+  }
+
+  .sx__calendar-header {
+    background-color: red;
+    display: none;
+  }
+
+  .sx__week-header-content {
+    background-color: green;
+    display: none;
+  }
+
+  .sx__current-time-indicator {
+    z-index: 1000;
+  }

@@ -6,7 +6,7 @@ export default function Timer({ expiryTimestamp }) {
         totalSeconds,
         seconds,
         minutes,
-        hours,
+        hours = '00',
         isRunning,
         start,
         pause,
@@ -26,7 +26,7 @@ export default function Timer({ expiryTimestamp }) {
 
     return (
         <>
-            <div className="bg-green-200 w-1/2 m-auto mt-6">
+            <div className="bg-green-200">
 
                 <div className="flex justify-center">
                     <h1 className="text-2xl">Pomodoro Timer</h1>
@@ -55,7 +55,7 @@ export default function Timer({ expiryTimestamp }) {
 
 
 
-                    <div className="text-8xl bg-red-300 w-1/2 flex justify-center">
+                    <div className="text-6xl bg-red-300 w-1/2 flex justify-center">
                         <span>{hours}</span>:<span>{minutes}</span>:<span>{seconds}</span>
                     </div>
                 </div>
