@@ -12,7 +12,7 @@ export default function App() {
         {/* left side */}
         <div className="flex-col px-4 w-1/4">
           <Timer />
-          <TodoList />
+          <TodoList /> 
         </div>
 
         {/* right side */}
