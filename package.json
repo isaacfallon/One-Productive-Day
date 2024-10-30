@@ -1,16 +1,16 @@
 {
+  "homepage": "http://isaacfallon.github.io/One-Productive-Day/",
   "name": "one-productive-day",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://isaacfallon.github.io/One-Productive-Day/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@schedule-x/current-time": "^2.4.1",
