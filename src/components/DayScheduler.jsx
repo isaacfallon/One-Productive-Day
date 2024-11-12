@@ -41,8 +41,8 @@ export default function DayScheduler() {
       {
         id: '2',
         title: 'Event 2',
-        start: todayString + ' 15:00',
-        end: todayString + ' 20:00',
+        start: todayString + ' 12:00',
+        end: todayString + ' 14:00',
         status: 'done'
       },
     ],
@@ -64,7 +64,7 @@ export default function DayScheduler() {
   //   id: 3,
   // })
 
-  console.log(eventsServicePlugin.getAll().length);
+  // console.log(eventsServicePlugin.getAll().length);
 
   function addEvent() {
     calendar.eventsService.add({
@@ -77,16 +77,15 @@ export default function DayScheduler() {
 
   return (
     <>
-      <div className="bg-green-400">
-        <p>Today&apos;s date: {today}</p>
-        <button onClick={addEvent}>Add event</button>
-        <ScheduleXCalendar
-          calendarApp={calendar}
-          customComponents={{
-            timeGridEvent: TimeGridEvent
-          }}
-        />
-      </div>
+      <p>Today&apos;s date: {today}</p>
+      <button onClick={addEvent}>Add event</button>
+      <ScheduleXCalendar
+        calendarApp={calendar}
+        customComponents={{
+          timeGridEvent: TimeGridEvent
+        }}
+      />
     </>
+
   )
 }

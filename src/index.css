@@ -3,22 +3,31 @@
 @tailwind utilities;
 
 .sx-react-calendar-wrapper {
-    /* width: 33%; */
-    /* max-width: 50vw; */
-    height: 800px;
-    max-height: 75vh;
-  }
+  /* width: 33%; */
+  /* max-width: 50vw; */
+  height: 1000px;
+  max-height: 74vh;
+}
 
-  .sx__calendar-header {
-    background-color: red;
-    display: none;
-  }
+.sx__calendar-header {
+  display: none;
+}
 
-  .sx__week-header-content {
-    background-color: green;
-    display: none;
-  }
+.sx__week-header-content {
+  display: none;
+}
 
-  .sx__current-time-indicator {
-    z-index: 1000;
-  }
+.sx__current-time-indicator {
+  z-index: 1000;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.sx__calendar {
+  /* z-index: 10; */
+}
